@@ -1,0 +1,94 @@
+(node:12342) NOTE: The AWS SDK for JavaScript (v2) will enter maintenance mode
+on September 8, 2024 and reach end-of-support on September 8, 2025.
+
+Please migrate your code to use AWS SDK for JavaScript (v3).
+For more information, check blog post at https://a.co/cUPnyil
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error [TimeoutError]: Connection timed out after 120000ms
+    at ClientRequest.<anonymous> (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/http/node.js:87:34)
+    at Object.onceWrapper (node:events:631:28)
+    at ClientRequest.emit (node:events:517:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at TLSSocket.emitRequestTimeout (node:_http_client:847:9)
+    at Object.onceWrapper (node:events:631:28)
+    at TLSSocket.emit (node:events:529:35)
+    at TLSSocket.emit (node:domain:489:12)
+    at Socket._onTimeout (node:net:598:8)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7) {
+  code: 'TimeoutError',
+  time: 2025-02-11T08:58:00.052Z,
+  region: 'us-east-1',
+  hostname: 'blr1.digitaloceanspaces.com',
+  retryable: true
+}
+ServiceUnavailable: Service is unavailable at this time.
+    at Request.extractError (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/services/s3.js:712:35)
+    at Request.callListeners (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/sequential_executor.js:106:20)
+    at Request.emit (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/sequential_executor.js:78:10)
+    at Request.emit (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/request.js:686:14)
+    at Request.transition (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/request.js:688:12)
+    at Request.callListeners (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/sequential_executor.js:116:18)
+    at Request.emit (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/sequential_executor.js:78:10)
+    at Request.emit (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/request.js:686:14)
+    at Request.transition (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/request.js:688:12)
+    at Request.callListeners (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/sequential_executor.js:116:18)
+    at callNextListener (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/sequential_executor.js:96:12)
+    at IncomingMessage.onEnd (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/event_listeners.js:417:13)
+    at IncomingMessage.emit (node:events:529:35)
+    at IncomingMessage.emit (node:domain:489:12) {
+  code: 'ServiceUnavailable',
+  region: null,
+  time: 2025-02-11T09:06:35.751Z,
+  requestId: 'not-available',
+  extendedRequestId: 'not-available',
+  cfId: undefined,
+  statusCode: 503,
+  retryable: true
+}
+ServiceUnavailable: Service is unavailable at this time.
+    at Request.extractError (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/services/s3.js:712:35)
+    at Request.callListeners (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/sequential_executor.js:106:20)
+    at Request.emit (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/sequential_executor.js:78:10)
+    at Request.emit (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/request.js:686:14)
+    at Request.transition (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/request.js:688:12)
+    at Request.callListeners (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/sequential_executor.js:116:18)
+    at Request.emit (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/sequential_executor.js:78:10)
+    at Request.emit (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/request.js:686:14)
+    at Request.transition (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/request.js:688:12)
+    at Request.callListeners (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/sequential_executor.js:116:18)
+    at callNextListener (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/sequential_executor.js:96:12)
+    at IncomingMessage.onEnd (/root/Study-aborad/studyabroadbackend/node_modules/aws-sdk/lib/event_listeners.js:417:13)
+    at IncomingMessage.emit (node:events:529:35)
+    at IncomingMessage.emit (node:domain:489:12) {
+  code: 'ServiceUnavailable',
+  region: null,
+  time: 2025-02-11T09:07:46.456Z,
+  requestId: 'not-available',
+  extendedRequestId: 'not-available',
+  cfId: undefined,
+  statusCode: 503,
+  retryable: true
+}
+(node:1328506) NOTE: The AWS SDK for JavaScript (v2) will enter maintenance mode
+on September 8, 2024 and reach end-of-support on September 8, 2025.
+
+Please migrate your code to use AWS SDK for JavaScript (v3).
+For more information, check blog post at https://a.co/cUPnyil
+(Use `node --trace-warnings ...` to show where the warning was created)
